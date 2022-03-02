@@ -43,6 +43,80 @@ outputDirPath = "~/Documents/JSONModel"
 
 
 
+**生成结果:**
+
+ExampleModelName.h
+
+```objective-c
+//
+//  ExampleModelName.h
+//  LNGame_Framework
+//
+//  Created by jenkins on 2022/03/02.
+//  Copyright © 2022 Apple. All rights reserved.
+//
+
+
+#import <Foundation/Foundation.h>
+@class ExampleModelName;
+@class HKAddress;
+@class HKOrderList;
+
+#pragma mark - Object interfaces
+
+@interface ExampleModelName : NSObject 
+
+@property (nonatomic, copy)   NSString *name;
+@property (nonatomic, strong)   HKAddress *address;
+@property (nonatomic, copy)   NSArray<HKOrderList *> *orderList;
+
+@end
+
+@interface HKAddress : NSObject 
+
+@property (nonatomic, copy)   NSString *city;
+@property (nonatomic, copy)   NSString *location;
+
+@end
+
+@interface HKOrderList : NSObject 
+
+@property (nonatomic, assign)   NSInteger id;
+@property (nonatomic, copy)   NSString *goods;
+
+@end
+```
+
+
+
+ExampleModelName.m
+
+```objective-c
+//
+//  ExampleModelName.m
+//  LNGame_Framework
+//
+//  Created by jenkins on  2022/03/02.
+//  Copyright © 2022 Apple. All rights reserved.
+//
+
+#import "ExampleModelName.h"
+
+@implementation ExampleModelName
+
+@end
+
+@implementation HKAddress
+
+@end
+
+@implementation HKOrderList
+
+@end
+```
+
+
+
 ## 其他：
 
 - **Jinja2官方文档**：http://docs.jinkan.org/docs/jinja2/
