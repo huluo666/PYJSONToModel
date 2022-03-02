@@ -31,6 +31,10 @@ rootModelName="ExampleModelName"
 TARGET_NAME="LNGame_Framework"
 #Model文件输出目录
 outputDirPath = "~/Documents/JSONModel"
+		
+#使用网络或本地数据
+jsonDict=getJSONDictWitUrl("https://aider.meizu.com/app/weather/listWeather?cityIds=101280101")
+jsonDict=getJSONDictWitUrl(本地JSON文件地址)
 ```
 
 
@@ -40,6 +44,8 @@ outputDirPath = "~/Documents/JSONModel"
 1、`cd 'JSONToModel.py文件所在路径'`
 
 2、`python3 JSONToModel.py`
+
+
 
 
 
